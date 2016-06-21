@@ -36,7 +36,8 @@ body{
 
 .main {
   background: $color-background-inner;
-  border: 1px solid darken($color-background-inner, 5);
+  // border: 1px solid darken($color-background-inner, 5);
+  border-spacing: 0;
   border-radius: $br;
   width: 100%;
   color: $font-color;
