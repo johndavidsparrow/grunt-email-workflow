@@ -34,10 +34,11 @@ p,
 ul,
 ol {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-size: $body-font-size;
+  line-height: 1.5;
   font-weight: normal;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   li {
     list-style-position: inside;
