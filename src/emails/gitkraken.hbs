@@ -4,12 +4,13 @@ subject: Simple GitKraken Email
 ---
 <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
 
+{{> header-notice-open }}
+    <p>Want to add some custom header content? <a href="#">And a link</a>?</p>
+{{> header-notice-close }}
+
 <table class="main">
-  <tr>
-    <td class="header-banner">
-        <img src="http://gitkraken.com/emails/banners/email-banner-1.jpg">
-    </td>
-  </tr>
+  {{> banner-row link='https://www.gitkraken.com' image='email-banner-1.jpg' }}
+  
   <tr>
     <td class="wrapper">
       <table>
@@ -21,7 +22,7 @@ subject: Simple GitKraken Email
             <p>This is a really simple email template. It's sole purpose is to get you to click the button below.</p>
             <p>All the information you need is on GitHub.</p>
 
-            {{> button type='primary' align='center' url='https://github.com/leemunroe/grunt-email-workflow' title='View the source on GitHub' }}
+            {{> button type='primary' align='center' url='https://www.gitkraken.com' title='View the source on GitHub' }}
 
             <p>Feel free to use, copy, modify this email template as you wish.</p>
             <p>Thanks, have a lovely day.</p>

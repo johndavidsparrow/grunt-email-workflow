@@ -1,0 +1,11 @@
+.header-notice {
+    color: $color-red;
+    p {
+        text-align: center;
+        font-size: $body-font-size - 2px;
+    }
+    a {
+        color: $color-red;
+        text-decoration: underline;
+    }
+}
