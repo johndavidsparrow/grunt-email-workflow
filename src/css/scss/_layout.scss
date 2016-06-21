@@ -63,7 +63,7 @@ body{
   background-color: $color-background-footer;
   color: $color-main-text-secondary;
   * {
-    font-size: 12px;
+    font-size: $body-font-size - 4px;
   }
   a {
       color: $color-yellow;
