@@ -2,21 +2,42 @@
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
 
-$padding: 30px; // For consistent padding
+$color-ink: #141422;
+$color-ink-light: #262633;
+$color-gray: #d0d0d2;
+$color-cream: #f9efc1;
+$color-red: #e75225;
+$color-yellow: #d8c13a;
+
+$color-background: $color-ink;
+$color-background-inner: $color-ink-light;
+$color-background-footer: $color-ink;
+
+$color-main-text-secondary: $color-gray;
+$color-text-link: $color-yellow;
+
+
+
+
+
+
+
+
+$padding: 10px; // For consistent padding
 $grey: #f6f6f6; // Background color
-$width: 580px; // Width of the content area
+$width: 640px; // Width of the content area
 $br: 3px; // Border radius
 $btn-br: 5px; // Border radius
-$primary-color: #348eda; // Primary color for buttons and links
-$font-color: #111111; // Default font color
+$primary-color: $color-text-link; // Primary color for buttons and links
+$font-color: $color-gray; // Default font color
 
 // Typography
 // -------
 
 $body-font-family:          "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-size:            16px !default;
 $body-font-weight:          400 !default;
-$body-font-size:            14px !default;
-$body-font-color:           #555 !default;
+$body-font-color:           $font-color !default;
 $body-line-height:          1.6 !default;
 
 // Notices

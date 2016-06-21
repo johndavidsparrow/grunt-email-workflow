@@ -3,18 +3,18 @@
 ------------------------------------- */
 
 body{
-  background-color: $grey;
+  background-color: $color-background;
 }
 
 .body {
-  background-color: $grey;
+  background-color: $color-background;
   width: 100%;
 }
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
   display: block;
-  Margin: 0 auto !important; /* makes it centered */
+  margin: 0 auto !important; /* makes it centered */
   max-width: $width;
   padding: 10px;
   width: auto !important;
@@ -33,12 +33,17 @@ body{
 /* -------------------------------------
     HEADER, FOOTER, MAIN
 ------------------------------------- */
+.header-banner {
+    padding: 0;
+}
 
 .main {
-  background: #ffffff;
-  border: 1px solid darken($grey, 5);
+  background: $color-background-inner;
+  // border: 1px solid darken($color-background-inner, 5);
+  border-spacing: 0;
   border-radius: $br;
   width: 100%;
+  color: $font-color;
 }
 
 .wrapper {
@@ -59,10 +64,13 @@ body{
 .footer {
   clear: both;
   width: 100%;
-
+  background-color: $color-background-footer;
+  color: $color-main-text-secondary;
   * {
-    color: #999999;
-    font-size: 12px;
+    font-size: $body-font-size - 4px;
+  }
+  a {
+      color: $color-yellow;
   }
 
   td {
