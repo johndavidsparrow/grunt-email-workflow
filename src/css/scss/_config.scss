@@ -2,6 +2,25 @@
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
 
+$color-ink: #141422;
+$color-ink-light: #262633;
+$color-text-gray: #d0d0d2;
+$color-cream: #f9efc1;
+$color-red: #e75225;
+$color-yellow: #d8c13a;
+$color-background: $color-ink;
+$color-main-text: $color-ink-light;
+$color-main-text-secondary: $color-ink-light;
+$color-background-footer: $color-ink;
+$color-text-link: $color-yellow;
+
+
+
+
+
+
+
+
 $padding: 30px; // For consistent padding
 $grey: #f6f6f6; // Background color
 $width: 580px; // Width of the content area
