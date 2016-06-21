@@ -66,14 +66,18 @@ body{
   width: 100%;
   background-color: $color-background-footer;
   color: $color-main-text-secondary;
+  padding: 15px 0;
   * {
     font-size: $body-font-size - 4px;
+  }
+  p {
+      margin-bottom: 10px;
   }
   a {
       color: $color-yellow;
   }
 
   td {
-    padding: 20px 0;
+    padding: 5px 0;
   }
 }
