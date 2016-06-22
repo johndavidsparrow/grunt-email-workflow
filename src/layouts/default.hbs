@@ -10,13 +10,70 @@
 <body>
 
 <table class="body">
-	<tr>
-		<td></td>
-		<td class="container">
-			<div class="content">{{ body }}</div>
-		</td>
-		<td></td>
-	</tr>
+  <tr>
+    <td></td>
+    <td class="container">
+      <div class="content">
+
+        {{#if preheader }}
+        <span class="preheader">
+          {{ preheader }}
+        </span>
+        {{/if}}
+
+        {{#if preheader-notice}}
+        {{> header-notice-open }}
+          <p>
+            {{{ preheader-notice }}}
+          </p>
+        {{> header-notice-close }}
+        {{/if}}
+
+        {{> axosoft-logo }}
+
+        <table class="main">
+
+          {{>
+            banner-row
+            link='https://www.gitkraken.com'
+            image='email-banner-1.jpg'
+          }}
+
+          <tr>
+            <td class="wrapper">
+              <table>
+                <tr>
+                  <td>
+                    <h1 class="align-center">
+                      {{{ header }}}
+                    </h1>
+
+                    {{ body }}
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <div class="footer">
+
+          {{> footer-address }}
+
+          {{#if footer-notice }}
+          {{> footer-notice-open }}
+            <p>
+              {{{ footer-notice }}}
+            </p>
+          {{> footer-notice-close }}
+          {{/if}}
+
+        </div>
+
+      </div>
+    </td>
+    <td></td>
+  </tr>
 </table>
 
 </body>

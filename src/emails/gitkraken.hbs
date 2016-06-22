@@ -1,47 +1,24 @@
 ---
 layout: default.hbs
 subject: Simple GitKraken Email
+preheader: This is preheader text. Some clients will show this text as a preview.
+preheader-notice: Some custom header content. <a href="#">And a link</a>?
+header: Simple responsive HTML email template
+footer-notice: You can add as many custom footer elements as you like, just like in the header. <a href="#" target="_blank">Example link</a>.
 ---
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
 
-{{> header-notice-open }}
-  <p>Some custom header content. <a href="#">And a link</a>?</p>
-{{> header-notice-close }}
+<p>
+  Ugh skateboard selfies sustainable, actually messenger bag brooklyn godard irony sriracha marfa craft beer. Waistcoat freegan tofu crucifix meditation, kitsch green juice seitan. Ramps cray brunch distillery, lumbersexual godard humblebrag tote bag forage cold-pressed chicharrones offal pitchfork. Drinking vinegar salvia lumbersexual, jean shorts letterpress 8-bit DIY ennui. Trust fund ennui small batch, celiac tacos synth DIY deep v. Direct trade four dollar toast cliche, thundercats hoodie celiac occupy. Dreamcatcher four loko twee VHS, scenester crucifix 90's health goth photo booth.
+</p>
 
-{{> axosoft-logo }}
+{{> button type='primary' align='center' url='https://www.gitkraken.com' title='Example CTA button' }}
 
-<table class="main">
+<p>
+  Slow-carb locavore taxidermy, literally church-key XOXO fanny pack affogato direct trade polaroid pop-up. Flannel narwhal austin, kinfolk pour-over vegan authentic schlitz locavore cronut 90's banh mi blog flexitarian. Godard chillwave hashtag, affogato migas four loko cornhole lo-fi helvetica master cleanse.
+</p>
 
-  {{> banner-row link='https://www.gitkraken.com' image='email-banner-1.jpg' }}
+{{> divider }}
 
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <h1 class="align-center">Simple responsive HTML email template</h1>
-            <p>Ugh skateboard selfies sustainable, actually messenger bag brooklyn godard irony sriracha marfa craft beer. Waistcoat freegan tofu crucifix meditation, kitsch green juice seitan. Ramps cray brunch distillery, lumbersexual godard humblebrag tote bag forage cold-pressed chicharrones offal pitchfork. Drinking vinegar salvia lumbersexual, jean shorts letterpress 8-bit DIY ennui. Trust fund ennui small batch, celiac tacos synth DIY deep v. Direct trade four dollar toast cliche, thundercats hoodie celiac occupy. Dreamcatcher four loko twee VHS, scenester crucifix 90's health goth photo booth.</p>
-
-            {{> button type='primary' align='center' url='https://www.gitkraken.com' title='Example CTA button' }}
-
-            <p>Slow-carb locavore taxidermy, literally church-key XOXO fanny pack affogato direct trade polaroid pop-up. Flannel narwhal austin, kinfolk pour-over vegan authentic schlitz locavore cronut 90's banh mi blog flexitarian. Godard chillwave hashtag, affogato migas four loko cornhole lo-fi helvetica master cleanse.</p>
-
-            {{> divider }}
-
-            <p>Williamsburg distillery four dollar toast gentrify synth. Disrupt pop-up cronut you probably haven't heard of them. Pitchfork beard whatever, pinterest photo booth schlitz chia fap PBR&amp;B taxidermy paleo freegan post-ironic tofu health goth. Migas readymade franzen fap normcore 3 wolf moon.</p>
-
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<div class="footer">
-
-  {{> footer-address }}
-
-  {{> footer-notice-open }}
-    <p>You can add as many custom footer elements as you like, just like in the header. <a href="#" target="_blank">Example link</a>.</p>
-  {{> footer-notice-close }}
-  
-</div>
+<p>
+  Williamsburg distillery four dollar toast gentrify synth. Disrupt pop-up cronut you probably haven't heard of them. Pitchfork beard whatever, pinterest photo booth schlitz chia fap PBR&amp;B taxidermy paleo freegan post-ironic tofu health goth. Migas readymade franzen fap normcore 3 wolf moon.
+</p>
