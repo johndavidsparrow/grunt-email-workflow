@@ -1,14 +1,16 @@
 ---
+description: Sent to a user with no GitKraken account after being invited to use GitKraken
 layout: default.hbs
-subject: Simple GitKraken Email
-<!-- preheader: This is preheader text. Some clients will show this text as a preview. -->
-<!-- preheader-notice: Some custom header content. <a href="#">And a link</a>? -->
+subject: GitKraken — You've been invited to use %PLAN_NAME%!
 header: You've been invited to use %PLAN_NAME% with %ORG_NAME%
-<!-- footer-notice: You can add as many custom footer elements as you like, just like in the header. <a href="#" target="_blank">Example link</a>. -->
 ---
 
-<p><a href='%LINK_URL%'>Register</a> your account to begin using %PLAN_NAME%.</p>
+<p class='align-center'>
+  <a href='%LINK_URL%'>Register</a> your account to begin using %PLAN_NAME%.
+</p>
 
 {{> button type='primary' align='center' url='%LINK_URL%' title='Register' }}
 
-<p>After registering, <a href='%LINK_URL%'>click here</a> to learn more about your new %PLAN_NAME% account.</p>
+<p class='align-center'>
+  After registering, <a href='%MORE_INFO_URL%'>click here</a> to learn more about your new %PLAN_NAME% account.
+</p>
