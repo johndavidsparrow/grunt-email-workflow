@@ -1,0 +1,16 @@
+---
+description: Sent to a user with no GitKraken account after being invited to use GitKraken
+layout: default.hbs
+subject: You've been invited to use %PLAN_NAME%!
+header: You've been invited to use %PLAN_NAME% with %ORG_NAME%
+---
+
+<p class='align-center'>
+  <a href='%LINK_URL%'>Register</a> your account to begin using %PLAN_NAME%.
+</p>
+
+{{> button type='primary' align='center' url='%LINK_URL%' title='Register' }}
+
+<p class='align-center'>
+  After registering, <a href='%MORE_INFO_URL%'>click here</a> to learn more about your new %PLAN_NAME% account.
+</p>
