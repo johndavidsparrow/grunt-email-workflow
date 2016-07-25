@@ -28,6 +28,14 @@ body {
 }
 
 // Let's make sure all tables have defaults
+
+td.light-inner {
+  background-color: $color-ink-light;
+}
+td.dark-inner {
+  background-color: $color-ink;
+}
+
 table {
   border-collapse: separate !important;
   mso-table-lspace: 0pt;
